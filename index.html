@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AJAX Demonstration</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="intro">
+			<div class="left stack-image"></div>
+			<div class="explanation">
+                <h1>Stack Overflow Reputation Booster</h1>
+				<p>Search via this App by topic for questions not yet answered on Stack Overflow to help you boost your reputation.  Find unanswered questions for a topic you know well, write a high quality solution, and watch your reputation rise.</p>
+				<p>This page also lets you search for the top answerers for a tag. Since you want to rise to the top ranks, view how many reputation points you'll need to plan to achieve</p>
+			</div>
+		</div>
+		<hr>
+		<div class="stack">	
+			<h3>Get Unanswered Questions</h3>
+			<p>Find unanswered questions by tag. For multiple tags, use a semi-colon to separate.</p>
+			<form class="unanswered-getter">
+				<input type="text" placeholder='e.g., "HTML" or "HTML;CSS"' name="tags" size="30" autofocus required>
+				<input type="submit" value="Submit">
+			</form>
+			<h3>View the Top Answerers for a Tag</h3>
+			<form class="inspiration-getter">
+				<input type="text" placeholder="e.g., jQuery" name="answerers" size="30"  required>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<div class="results-container">
+			<div class="search-results"></div>
+			<div class="results">			
+			</div>
+		</div>
+	</div>
+	<div class="templates hidden">
+		<dl class="result question">
+			<dt>Question</dt>
+				<dd class="question-text"><a href="" target="_blank"></a></dd>
+			<dt>Asked</dt>
+				<dd class="asked-date"></dd>
+			<dt>Viewed</dt>
+				<dd class="viewed"></dd>
+			<dt>Asker</dt>
+				<dd class="asker"></dd>
+		</dl>
+		<dl class="user">
+			<dt>User Name</dt>
+				<dd class="user-name"><a href="" target="_blank"></a></dd>
+			<dt>Reputation</dt>
+				<dd class="reputation"></dd>
+			<dt>Profile Image</dt>
+				<dd class="image">
+				<img id="profile"></dd>
+			<dt>Link</dt>
+				<dd class="link">
+				<a id="profile-link">Profile Link</a></dd>
+		</dl>
+		<div class="error">
+			<p>Uh-oh! Something went wrong with your request. Here's what we know:</p>
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
